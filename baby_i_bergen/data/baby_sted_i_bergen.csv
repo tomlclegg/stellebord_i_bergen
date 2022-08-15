@@ -1,8 +1,14 @@
-﻿title,latitude,longitude,description
-Godt brød,60.39069,5.32209,Stellebord med bleier
-Galleriet,60.39307,5.32519,Do med stellebord. Sofa til amming i et rolig sted
-Xhibition,60.39268,5.32621,Stort toalett med stellbord of amming stol. Rent og fint. Koden hentes fra Apoteket ved siden av.
-Telegrafen,60.39219,5.32571,Skittent og ekkelt
-Bergen Storsenter,60.38932,5.33259,Stellematte (myk) ved vasken og toallet. Stol til amming. Toalett for liten til å ta vognen med inn. Kode hentes på Cubus.
-Horisont,60.47012,5.32234,mangler info
-IKEA,60.47616,5.33187,Lekerom. Stellebord med bleier
+﻿title,latitude,longitude,source,description
+Godt brød,60.39069,5.32209,Katerina,Stellebord med bleier
+Galleriet,60.39307,5.32519,Katerina,Do med stellebord. Sofa til amming i et rolig sted
+Xhibition,60.39268,5.32621,Katerina,Stort toalett med stellbord of amming stol. Rent og fint. Koden hentes fra Apoteket ved siden av.
+Telegrafen,60.39219,5.32571,Katerina,Skittent og ekkelt
+Bergen Storsenter,60.38932,5.33259,Katerina,Stellematte (myk) ved vasken og toallet. Stol til amming. Toalett for liten til å ta vognen med inn. Kode hentes på Cubus.
+Horisont,60.47012,5.32234,Katerina,mangler info
+IKEA,60.47616,5.33187,Katerina,Lekerom. Stellebord med bleier
+Nygårdsparken Pavilion,60.3855,5.32615,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,mangler info
+"Skur 8, Bryggen",60.39783,5.32083,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,mangler info
+Kløverhuset,60.39436,5.32296,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,mangler info
+"Fisketorget, Mathallen",60.39463,5.32371,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,mangler info
+Soya Restaurant,60.39634,5.3269,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,mangler info
+Råvarene Cafe og Bio bistro,60.39189,5.33061,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,mangler info
