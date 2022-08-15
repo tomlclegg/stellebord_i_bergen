@@ -27,7 +27,8 @@ server <- function(input, output) {
                  lng = ~longitude,
                  lat = ~latitude,
                  label = ~title,
-                 popup = ~description)
+                 popup = ~description,
+                 clusterOptions = markerClusterOptions(showCoverageOnHover = FALSE))
 
   })
 
