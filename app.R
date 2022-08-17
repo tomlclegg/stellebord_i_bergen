@@ -23,41 +23,17 @@ server <- function(input, output) {
 
     mymap <- leaflet() |>
       addTiles() |>
-      addCircles(data = loc,
+      addMarkers(data = loc,
                  layerId = ~title,
                  lng = ~longitude,
                  lat = ~latitude,
-                 label = ~title)
-
+                 label = ~title,
+                 popup = ~sprintf("Navn: %s<br><br>Lokasjon: %s<br><br>Beskrivelse: %s",
+                                  loc$title,
+                                  loc$location,
+                                  loc$description))
     mymap
   })
-
-  show_loc_popup <- function(title, lng, lat) {
-
-    selected_loc <- loc[loc$title == title, ]
-
-    content <- as.character(tagList(
-      tags$strong("Navn: ", selected_loc$title),
-      tags$br(),
-      sprintf("Lokasjon: %s", selected_loc$location),
-      tags$br(),
-      sprintf("Beskrivelse: %s", selected_loc$description)
-    ))
-    leafletProxy("map") |> addPopups(selected_loc$longitude, selected_loc$latitude,
-                                     content, layerId = title)
-  }
-
-  observe({
-    leafletProxy("map") |> clearPopups()
-    event <- input$map_shape_click
-    if (is.null(event))
-      return()
-
-    isolate({
-      show_loc_popup(event$id, event$lat, event$lng)
-    })
-  })
-
 }
 
 # Run the application
