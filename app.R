@@ -22,7 +22,7 @@ server <- function(input, output) {
   output$map <- renderLeaflet({
 
     mymap <- leaflet() |>
-      addTiles() |>
+      addProviderTiles(provider = "Esri.WorldStreetMap") |>
       addMarkers(data = loc,
                  layerId = ~title,
                  lng = ~longitude,
