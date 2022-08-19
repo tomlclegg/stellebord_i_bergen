@@ -33,6 +33,10 @@ server <- function(input, output) {
                                   loc$location,
                                   loc$description,
                                   loc$google_maps),
+                 clusterOptions = markerClusterOptions(showCoverageOnHover = FALSE))
+
+
+
     mymap
   })
 }
