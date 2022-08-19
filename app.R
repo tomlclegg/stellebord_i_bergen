@@ -28,10 +28,11 @@ server <- function(input, output) {
                  lng = ~longitude,
                  lat = ~latitude,
                  label = ~title,
-                 popup = ~sprintf("Navn: %s<br><br>Lokasjon: %s<br><br>Beskrivelse: %s",
+                 popup = ~sprintf("Navn: %s<br><br>Lokasjon: %s<br><br>Beskrivelse: %s<br><br><a href = '%s'> Google maps </a>",
                                   loc$title,
                                   loc$location,
-                                  loc$description))
+                                  loc$description,
+                                  loc$google_maps),
     mymap
   })
 }
