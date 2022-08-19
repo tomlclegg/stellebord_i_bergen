@@ -1,19 +1,19 @@
-﻿title,latitude,longitude,source,location,description
-Godt brød,60.39069,5.32209,Katerina,toalett i 2. etasje,Stellebord med bleier og stellekluter
-Galleriet,60.39307,5.32519,Katerina,ukjent,Do med stellebord. Sofa til amming i et rolig sted
-Xhibition,60.39268,5.32621,Katerina,Koden hentes fra Apoteket ved siden av.,Stort toalett med stellbord of amming stol. Rent og fint
-Telegrafen,60.39219,5.32571,Katerina,ukjent,Skittent og ekkelt
-Bergen Storsenter,60.38932,5.33259,Katerina,Kode hentes på Cubus.,Stellematte (myk) ved vasken og toallet. Stol til amming. Toalett for liten til å ta vognen med inn. Kode hentes på Cubus.
-Horisont,60.47012,5.32234,Katerina,ukjent,mangler info
-IKEA,60.47616,5.33187,Katerina,ukjent,Lekerom. Stellebord med bleier
-Nygårdsparken Pavilion,60.3855,5.32615,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info
-"Skur 8, Bryggen",60.39783,5.32083,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info
-Kløverhuset,60.39436,5.32296,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info
-"Fisketorget, Mathallen",60.39463,5.32371,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info
-Soya Restaurant,60.39634,5.3269,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info
-Råvarene Cafe og Bio bistro,60.39189,5.33061,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info
-KODE 2,60.39008,5.32508,https://kodebergen.no/praktisk-tilgjengelighet,handikapptoalettet (Nøkkel hentes i resepsjonen),stellebord (uten pute)
-KODE 4,60.38931,5.32851,https://kodebergen.no/praktisk-tilgjengelighet,ukjent,Nedfellbart stellebord på dametoalettet (handikappavlukket).
-Bergen Offentlige Bibliotek,60.38971,5.33164,unconfirmed,handikaptoalet,Stellebord på bibliotekets 
-Lagunen,60.29756,5.3285,unconfirmed,ukjent,mangler info
-Dr. Wiesener,60.40048,5.32302,TC,handikapptoalettet,Enkelt stellebord
+﻿title,latitude,longitude,source,location,description,google_maps
+Godt brød,60.39069,5.32209,Katerina,toalett i 2. etasje,Stellebord med bleier og stellekluter,
+Galleriet,60.39307,5.32519,Katerina,ukjent,Do med stellebord. Sofa til amming i et rolig sted,
+Xhibition,60.39268,5.32621,Katerina,Koden hentes fra Apoteket ved siden av.,Stort toalett med stellbord of amming stol. Rent og fint,
+Telegrafen,60.39219,5.32571,Katerina,ukjent,Skittent og ekkelt,
+Bergen Storsenter,60.38932,5.33259,Katerina,Kode hentes på Cubus.,Stellematte (myk) ved vasken og toallet. Stol til amming. Toalett for liten til å ta vognen med inn. Kode hentes på Cubus.,https://goo.gl/maps/76Vawa1dzqYTu2Ca9
+Horisont,60.47012,5.32234,Katerina,ukjent,mangler info,
+IKEA,60.47616,5.33187,Katerina,ukjent,Lekerom. Stellebord med bleier,
+Nygårdsparken Pavilion,60.3855,5.32615,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info,
+"Skur 8, Bryggen",60.39783,5.32083,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info,
+Kløverhuset,60.39436,5.32296,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info,
+"Fisketorget, Mathallen",60.39463,5.32371,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info,
+Soya Restaurant,60.39634,5.3269,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info,
+Råvarene Cafe og Bio bistro,60.39189,5.33061,www.bergensentrum.no/byliv_bergen/tjenester/toalett-i-bergen-sentrum/,ukjent,mangler info,
+KODE 2,60.39008,5.32508,https://kodebergen.no/praktisk-tilgjengelighet,handikapptoalettet (Nøkkel hentes i resepsjonen),stellebord (uten pute),https://goo.gl/maps/UQH2kBmBMQTp1Xh6A
+KODE 4,60.38931,5.32851,https://kodebergen.no/praktisk-tilgjengelighet,ukjent,Nedfellbart stellebord på dametoalettet (handikappavlukket).,https://goo.gl/maps/K6Tt8QM33XkPqNSw6
+Bergen Offentlige Bibliotek,60.38971,5.33164,unconfirmed,handikaptoalet,Stellebord på bibliotekets ,
+Lagunen,60.29756,5.3285,unconfirmed,ukjent,mangler info,
+Dr. Wiesener,60.40048,5.32302,TC,handikapptoalettet,Enkelt stellebord,
