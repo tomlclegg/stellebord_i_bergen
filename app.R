@@ -22,10 +22,10 @@ server <- function(input, output) {
   output$map <- renderLeaflet({
 
     quality_icons <- awesomeIconList(
-      good    = makeAwesomeIcon(icon= 'xmark', markerColor = 'green',  iconColor = 'black'),
-      okay    = makeAwesomeIcon(icon= 'xmark', markerColor = 'orange', iconColor = 'black'),
-      poor    = makeAwesomeIcon(icon= 'xmark', markerColor = 'red',    iconColor = 'black'),
-      unknown = makeAwesomeIcon(icon= 'xmark', markerColor = 'lightgray',   iconColor = 'black'))
+      good    = makeAwesomeIcon(icon= 'check',    library = "fa", markerColor = 'green'),
+      okay    = makeAwesomeIcon(icon= 'minus',    library = "fa", markerColor = 'orange'),
+      poor    = makeAwesomeIcon(icon= 'close',    library = "fa", markerColor = 'red'),
+      unknown = makeAwesomeIcon(icon= 'question', library = "fa", markerColor = 'lightgray'))
 
 
     mymap <- leaflet() |>
