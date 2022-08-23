@@ -1,0 +1,13 @@
+# Feature ideas:
+# Traffic light markers
+# Green = good
+# Amber = poor facilities
+# Red   = no facilities
+
+#reset zoom
+
+# Search function
+
+# Rating system
+
+# Search/filter functions
