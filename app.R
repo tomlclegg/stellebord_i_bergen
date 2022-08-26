@@ -19,6 +19,12 @@ ui <- fillPage(
 
 server <- function(input, output) {
 
+  showModal(modalDialog(
+    title = "Welcome",
+    "Please contact with updates or new locations",
+    easyClose = TRUE
+  ))
+
   output$map <- renderLeaflet({
 
     quality_icons <- awesomeIconList(
