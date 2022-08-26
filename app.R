@@ -9,11 +9,10 @@ library(leaflegend)
 # Read in data ------------------------------------------------------------
 
 
-loc <- read.csv("data/baby_sted_i_bergen.csv")
+loc <- read.csv("data/stellebord_i_bergen.csv")
 
 
 ui <- fillPage(
-
   leafletOutput("map", width = "100%", height = "100%")
 )
 
