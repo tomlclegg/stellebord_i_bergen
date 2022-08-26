@@ -19,7 +19,7 @@ ui <- fillPage(
 server <- function(input, output) {
 
   showModal(modalDialog(
-    title = "Welcome",
+    title = "Stellebord i Bergen",
     "Please contact with updates or new locations",
     easyClose = TRUE
   ))
