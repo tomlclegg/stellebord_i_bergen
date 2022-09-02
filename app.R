@@ -15,17 +15,18 @@ server <- function(input, output) {
 
   showModal(modalDialog(
     title = "Stellebord i Bergen",
-    "Please contact with updates or new locations",
+    "Finn din nærmeste stellebord når du trenger det mest!",
+    footer = "Send tips om oppdateringer eller nye steder!",
     easyClose = TRUE
   ))
 
   output$map <- renderLeaflet({
 
     quality_icons <- awesomeIconList(
-      good    = makeAwesomeIcon(icon= 'check',    library = "fa", markerColor = 'green'),
-      okay    = makeAwesomeIcon(icon= 'minus',    library = "fa", markerColor = 'orange'),
-      poor    = makeAwesomeIcon(icon= 'close',    library = "fa", markerColor = 'red'),
-      unknown = makeAwesomeIcon(icon= 'question', library = "fa", markerColor = 'lightgray'))
+      bra    = makeAwesomeIcon(icon= 'check',    library = "fa", markerColor = 'green'),
+      OK     = makeAwesomeIcon(icon= 'minus',    library = "fa", markerColor = 'orange'),
+      dårlig = makeAwesomeIcon(icon= 'close',    library = "fa", markerColor = 'red'),
+      ukjent = makeAwesomeIcon(icon= 'question', library = "fa", markerColor = 'lightgray'))
 
 
     mymap <- leaflet() |>
@@ -44,7 +45,7 @@ server <- function(input, output) {
                            orientation = 'vertical',
                            title = htmltools::tags$div(
                              style = 'font-size: 20px;',
-                             "Quality"),
+                             "Kvalitet"),
                            labelStyle = 'font-size: 16px;',
                            position = 'bottomright')
 
