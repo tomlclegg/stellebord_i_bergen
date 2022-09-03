@@ -22,34 +22,17 @@ server <- function(input, output) {
 
   output$map <- renderLeaflet({
 
-    quality_icons <- awesomeIconList(
-      bra    = makeAwesomeIcon(icon= 'check',    library = "fa", markerColor = 'green'),
-      OK     = makeAwesomeIcon(icon= 'minus',    library = "fa", markerColor = 'orange'),
-      dårlig = makeAwesomeIcon(icon= 'close',    library = "fa", markerColor = 'red'),
-      ukjent = makeAwesomeIcon(icon= 'question', library = "fa", markerColor = 'lightgray'))
-
-
     mymap <- leaflet() |>
       addProviderTiles(provider = "Esri.WorldStreetMap") |>
-      addAwesomeMarkers(data = loc,
+      addMarkers(data = loc,
                         layerId = ~title,
                         lng = ~longitude,
                         lat = ~latitude,
                         label = ~title,
-                        icon = ~quality_icons[quality],
                         popup = ~paste0("Navn: ", loc$title, "<br><br>",
                                         "Lokasjon: ", loc$location, "<br><br>",
                                         "Beskrivelse: ", loc$description),
-                        clusterOptions = markerClusterOptions()) |>
-      addLegendAwesomeIcon(iconSet = quality_icons,
-                           orientation = 'vertical',
-                           title = htmltools::tags$div(
-                             style = 'font-size: 20px;',
-                             "Kvalitet"),
-                           labelStyle = 'font-size: 16px;',
-                           position = 'bottomright')
-
-
+                        clusterOptions = markerClusterOptions())
 
     mymap
   })
