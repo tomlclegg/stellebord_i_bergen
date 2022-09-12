@@ -16,7 +16,7 @@ server <- function(input, output) {
   showModal(modalDialog(
     title = "Stellebord i Bergen",
     "Finn din nærmeste stellebord når du trenger det mest!",
-    footer = "Send tips om oppdateringer eller nye steder!",
+    footer = "Send tips om oppdateringer eller nye steder: stellebord_i_bergen@protonmail.com",
     easyClose = TRUE
   ))
 
