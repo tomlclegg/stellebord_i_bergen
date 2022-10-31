@@ -20,6 +20,8 @@ server <- function(input, output) {
     easyClose = TRUE
   ))
 
+
+
   output$map <- renderLeaflet({
 
     mymap <- leaflet() |>
@@ -29,13 +31,21 @@ server <- function(input, output) {
                         lng = ~longitude,
                         lat = ~latitude,
                         label = ~title,
-                        popup = ~paste0("Navn: ", loc$title, "<br><br>",
-                                        "Lokasjon: ", loc$location, "<br><br>",
-                                        "Beskrivelse: ", loc$description),
                         clusterOptions = markerClusterOptions())
 
     mymap
   })
+
+  observeEvent(input$map_marker_click, {
+    id = input$map_marker_click$id
+    showModal(modalDialog(
+      title = loc$title[loc$title == id],
+      paste0(loc$location[loc$title == id]),
+      footer = modalButton("Close"),
+      easyClose = TRUE
+    ))
+  })
+
 }
 
 # Run the application
