@@ -16,7 +16,7 @@ server <- function(input, output) {
   showModal(modalDialog(
     title = "Stellebord i Bergen",
     "Finn ditt nærmeste stellebord når du trenger det mest!",
-    footer = "Send tips til: stellebord_i_bergen@protonmail.com",
+    footer = a("Send tips med nye sted/info", href="https://forms.gle/2i6M7EKbQK8D9oZK8"),
     easyClose = TRUE
   ))
 
@@ -27,11 +27,10 @@ server <- function(input, output) {
     mymap <- leaflet() |>
       addProviderTiles(provider = "Esri.WorldStreetMap") |>
       addMarkers(data = loc,
-                        layerId = ~title,
-                        lng = ~longitude,
-                        lat = ~latitude,
-                        label = ~title,
-                        clusterOptions = markerClusterOptions())
+                 layerId = ~title,
+                 lng = ~longitude,
+                 lat = ~latitude,
+                 label = ~title)
 
     mymap
   })
@@ -40,7 +39,13 @@ server <- function(input, output) {
     id = input$map_marker_click$id
     showModal(modalDialog(
       title = loc$title[loc$title == id],
-      paste0(loc$location[loc$title == id]),
+      HTML("<b>Lokasjon</b>",
+           "<br>",
+           loc$location[loc$title == id],
+           "<br>","<br>",
+           "<b>Beskrivelse</b>",
+           "<br>",
+           loc$description[loc$title == id]),
       footer = modalButton("Close"),
       easyClose = TRUE
     ))
